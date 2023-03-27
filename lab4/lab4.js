@@ -1,16 +1,16 @@
 class Student{
-    construction(id, firstname, lastname, class_id, email, phone, dob){
+    constructor(id, firstname, lastname, class_id, email, phone, dob) {
         this.id= id;
-        this.firstname;
-        this.lastname;
-        this.class_id;
-        this.email;
-        this.phone;
-        this.dob;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.class_id = class_id;
+        this.email = email;
+        this.phone = phone;
+        this.dob = dob;
     }
     //Phương thấy cho thấy lấy tên đầy đủ. (họ trước tên sau)
-    getfullname(){
-        return this.lastname + "" + this.firstname;
+    getFullname(){
+        return this.lastname + " " + this.firstname;
     }
     //Phương thức tính tuổi dựa trên ngày sinh được cấp.
     getageinyears(){
@@ -21,7 +21,7 @@ class Student{
     }
 }
 //khởi tạo đối tượng và truyền tham số cần thiết vào constructor
-let freehMan = new student(
+let freshMan = new Student(
     "PD08266"
     "Nguyễn Anh Khoa"
     "Lê"
@@ -30,6 +30,7 @@ let freehMan = new student(
     "0941711760"
     "2004-09-30"
 );
+
 console.log(freshMan);
 console.log("fullname:" + freshMan.getFullname());
 console.log("age:"+ freshMan.getAgeInYears());
