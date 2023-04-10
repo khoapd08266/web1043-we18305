@@ -35,7 +35,7 @@
     margin-bottom: 0;
     border: 0;
     font-size: 20px;
-    background-color: #ed7669;
+    background-color: #a269ed;
     overflow: hidden;
     text-decoration: none;
     
@@ -87,7 +87,7 @@
     }
   
     .navbar-brand:hover {
-      color: #FCD757;
+      color: #fc57c2;
     }
   
   /*------- HEADER ------------*/
@@ -146,8 +146,8 @@
     border-radius: 150px;
      -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-    background: #ee8478;
-    border: 2px solid #eb685a;
+    background: #3e2b29;
+    border: 2px solid #5aeb7c;
     color: #fff; 
     font-size: 90%;
     margin-right: 20px;
@@ -157,7 +157,7 @@
   .btn:active,
   input[type=submit]:hover,
   input[type=submit]:active {
-    background-color: #eb685a;
+    background-color: #5aebc2;
     color: #fff;
     transition: 0.3s;
   }
