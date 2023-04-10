@@ -5,42 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag and Drop</title>
-    <style>
-        .wrapper{
-            width: 50%;
-            background-color: antiquewhite;
-            padding: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-        }
-        .main{
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-        }
-        .leftc{
-            border: 5px solid salmon;
-            width: 100px;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .rightc{
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-        }
-        .item{
-            padding: 5px 20px 5px 20px;
-            border: 1px dashed seagreen;
-            margin: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="b1.css">
 </head>
 <body>
     <div class="wrapper">
@@ -58,26 +23,6 @@
             </div>
         </div>
     </div>
-    <script>
-        // drag
-        let items=document.getElementsByClassName("item");
-        for(let i=0;i<items.length;i++){
-            let item=items[i];
-            item.setAttribute("draggable",true);
-            item.addEventListener("dragstart",(e)=>{
-                e.dataTransfer.setData("itemId",item.id);
-            })
-        }
-        // drop
-        let bin=document.getElementById("bin");
-        bin.addEventListener("dragover",(e)=>{
-            if(e.preventDefault) e.preventDefault();// allow to drop
-        });
-        bin.addEventListener("drop",(e)=>{
-            let itemId=e.dataTransfer.getData("itemId");
-            let draggingItem= document.getElementById(itemId);
-            e.target.appendChild(draggingItem);
-        })
-    </script>
+    <Script src="b1.js"></Script>
 </body>
 </html>
